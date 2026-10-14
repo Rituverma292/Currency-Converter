@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:url('https://miro.medium.com/v2/resize:fit:1200/1*2bf303U0V7AH3wP6ezUZ5g.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Card */
+.card {
+  background: rgba(103, 98, 98, 0.1);  /* transparency */
+  backdrop-filter: blur(15px);          /* glass blur */
+  -webkit-backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 20px;
+  width: 420px;
+
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Input */
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 15px;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Dropdowns */
+.dropdowns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+select {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 40%;
+  cursor: pointer;
+}
+
+/* Swap Button */
+#swap {
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #667eea;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+#swap:hover {
+  transform: rotate(180deg);
+}
+
+/* Result */
+.result {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Loader */
+.loader {
+  display: none;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media(max-width: 400px){
+  .card {
+    width: 90%;
+  }
+}
